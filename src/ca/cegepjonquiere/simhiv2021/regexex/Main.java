@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         // CODE POSTAL ********************************************************
-        Pattern patronCodePostal = Pattern.compile("([a-zA-Z][0-9]){3}");
+        Pattern patronCodePostal = Pattern.compile("([A-Z][0-9]){3}", Pattern.CASE_INSENSITIVE);
 
         Scanner in = new Scanner(System.in);
 
@@ -35,6 +35,7 @@ public class Main {
 
         // Exemples de regex des notes de cours********************************
         Pattern codeCoursInfo = Pattern.compile("420-[A-Z]{3}-JQ");
+        Pattern postalEspacePermis = Pattern.compile("\\b[A-Z][0-9][A-Z]\\s?[0-9][A-Z][0-9]\\b", Pattern.CASE_INSENSITIVE);
         Pattern courriel = Pattern.compile("\\b([a-z]|[0-9])+@[a-z]([a-z]|[0-9])*\\.[a-z]([a-z]|[0-9])*\\b");
         Pattern resistor = Pattern.compile("[NBROJVbMLoA]{4,5}");
     }
