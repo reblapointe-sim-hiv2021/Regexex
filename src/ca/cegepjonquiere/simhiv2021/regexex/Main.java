@@ -19,9 +19,7 @@ public class Main {
         if(matche.find())
             System.out.println("Merci! Code postal entré : " + matche.group());
         else
-            System.out.println("Ceci n'est pas un code postal");
-
-
+            System.out.println("Ceci n'est pas un code postal.");
 
         // NOMBRES ************************************************************
         Pattern nombre = Pattern.compile("[\\d]+(,[\\d]+)?");
@@ -35,7 +33,9 @@ public class Main {
             System.out.println(matche.group());
 
 
-        // CODE COURS *********************************************************
+        // Exemples de regex des notes de cours********************************
         Pattern codeCoursInfo = Pattern.compile("420-[A-Z]{3}-JQ");
+        Pattern courriel = Pattern.compile("\\b([a-z]|[0-9])+@[a-z]([a-z]|[0-9])*\\.[a-z]([a-z]|[0-9])*\\b");
+        Pattern resistor = Pattern.compile("[NBROJVbMLoA]{4,5}");
     }
 }
