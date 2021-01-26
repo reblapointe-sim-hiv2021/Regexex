@@ -1,5 +1,4 @@
 package ca.cegepjonquiere.simhiv2021.regexex;
-import java.io.Console;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
