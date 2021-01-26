@@ -22,7 +22,7 @@ public class Main {
 
         Pattern codeCoursInfo = Pattern.compile("420-[A-Z]{3}-JQ");
 
-        Pattern nombre = Pattern.compile("[0-9]+(,[0-9]+)?");
+        Pattern nombre = Pattern.compile("^[0-9]+(,[0-9]+)?$");
 
     }
 }
